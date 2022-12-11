@@ -1,0 +1,20 @@
+from all_languages import languages
+
+class Translation:
+    """Seaches for the desired language through the dictionary for validation"""
+    def find_language(mic):
+        print('Say desired language:')
+
+        switch_lang = mic.speech 
+        while (switch_lang == 'None'): # Process requested language to fit in dictionary
+            switch_lang = mic.to_listen()
+            switch_lang = switch_lang.lower()
+        if (switch_lang not in languages): # Checks validity in the dictionary
+            print('Not an optional language. Check language list.')
+            print()
+            switch_lang = 'None'
+        return switch_lang
+
+
+
+        
