@@ -1,0 +1,21 @@
+from title_screen import TitleScreen
+from long_list import LongList
+from generate_lang import GenerateLang
+
+class MainMenu:
+    """User Interface in a continous while loop"""
+    def run():
+        while True:
+            TitleScreen.display()           
+            TitleScreen.options()
+            # print('\a')
+            option = input('Option: ')
+            if option == '1':
+                LongList.show_langs()
+            elif option == "2":
+                GenerateLang.all()
+            elif option == "3":
+                print('Bye Bye <3')
+                exit()
+            else:
+                print('Invalid Option')
