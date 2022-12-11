@@ -1,0 +1,21 @@
+import speech_recognition as sr
+
+class Mic:
+    def __init__ (self, speech = None):
+        """Initializing what the user will say as speech"""
+        self.speech = speech
+
+    def to_listen(self):
+        """Recognizes audio (classs) from Micorophone (subclass) to send in speech"""
+        r = sr.Recognizer()
+        with sr.Microphone() as source: # Default PC mic is aduio source
+            print('Speak...')
+            audio = r.listen(source) # Insert frace in audio data after listen
+        
+        try:
+            print('Wait...')
+            self.speech = r.recognize_google(audio, language = 'en-in') # Use Google API for recognition
+            print(f'Heard: {self.speech}')
+        except:
+            return 'None'
+        return self.speech
