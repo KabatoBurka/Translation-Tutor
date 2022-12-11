@@ -1,0 +1,27 @@
+from playsound import playsound
+from googletrans import Translator
+import os
+from gtts import gTTS
+from all_languages import languages
+
+translation = Translator() # Assigning translation
+
+class UseTranslation:
+    
+    def __init__(self, switch_lang = None):
+        """Initalizing the move from text to translation"""
+        self.switch_lang = switch_lang
+    
+    def take_dic(self, mic):
+        """Process displays and speakcs translation directly from mapped language"""
+        self.switch_lang = languages[self.switch_lang]
+        to_translate = translation.translate(mic.speech, dest=self.switch_lang)
+        text  = to_translate.text
+        aloud = gTTS(text = text, lang = self.switch_lang, slow = False)
+        print('Translation: ' + text) 
+        
+        aloud.save('said.mp3') 
+        playsound('said.mp3') # Play saved translation in mp3
+        os.remove('said.mp3') # Delete mp3 in folder
+        
+
