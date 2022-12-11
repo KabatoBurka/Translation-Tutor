@@ -8,7 +8,8 @@ Ensure the following is installed:
   - googletrans 3.0.0
   - gTTS 2.3.0
 
-Simply type pip install then only the name (no need for the download type)
+Simply type "pip install..." then only the name in the command prompt (no need for the download type)
+
 Note:
   - This was run using Pyhthon 3.9.13
   - Run file named main
