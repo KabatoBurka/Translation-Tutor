@@ -1,5 +1,3 @@
-# from ZZY3 import TitleScreen
-# from ZZY2 import language
 from translation import Translation
 from use_translation import UseTranslation
 from mic import Mic
