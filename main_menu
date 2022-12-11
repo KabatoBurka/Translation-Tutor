@@ -12,9 +12,9 @@ class MainMenu:
             option = input('Option: ')
             if option == '1':
                 LongList.show_langs()
-            elif option == "2":
+            elif option == '2':
                 GenerateLang.all()
-            elif option == "3":
+            elif option == '3':
                 print('Bye Bye <3')
                 exit()
             else:
