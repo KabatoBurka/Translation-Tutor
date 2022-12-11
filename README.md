@@ -3,7 +3,7 @@ This application allows a user to say something in English and get an output res
 
 Ensure the following is installed:
   - Playsound 1.9.0
-  - PyAUdio 0.2.11
+  - PyAudio 0.2.11
   - SpeechRecognition 3.9.0
   - googletrans 3.0.0
   - gTTS 2.3.0
