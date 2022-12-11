@@ -11,4 +11,5 @@ Ensure the following is installed:
 Simply type pip install then only the name (no need for the download type)
 Note:
   - This was run using Pyhthon 3.9.13
+  - Run file named main
   - Using new version of googletrans might generate unexpected errors
