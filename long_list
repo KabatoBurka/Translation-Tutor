@@ -1,0 +1,8 @@
+from all_languages import languages
+
+class LongList:
+    """Simply displays all languages from dictionary"""
+    
+    def show_langs():
+        for lang, abrv in languages.items():
+            print('-', lang.capitalize())
