@@ -1,0 +1,16 @@
+# from ZZY3 import TitleScreen
+# from ZZY2 import language
+from translation import Translation
+from use_translation import UseTranslation
+from mic import Mic
+class GenerateLang:
+    
+    def all():
+        phrase = Mic()
+        phrase.speech = phrase.to_listen()# the phrase to translate
+        language = Mic()
+        language.speech = 'None'
+        switch_lang = Translation.find_language(language)
+        if (switch_lang != 'None'):
+            test = UseTranslation(switch_lang)
+            test.take_dic(phrase)
