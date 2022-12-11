@@ -1,0 +1,13 @@
+class TitleScreen:
+    """Creates diplay of program title and options"""
+    def display():
+        print('{:-^50}'.format('-'))
+        print()
+        print('{:^50}'.format('Self-Tutor Translator'))
+    def options():
+        print('\a')
+        print('{:-^50}'.format('-'))
+        print("{:^47}".format('1. Language List'))
+        print("{:^43}".format('2. Translate'))
+        print("{:^38}".format('3. Done'))
+        print('{:-^50}'.format('-'))
